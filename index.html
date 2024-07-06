@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-left">
+                <div class="form-header">
+                    <div class="logo_area">
+                        <img src="Images/logo.png" alt="Logo" class="logo">
+                        <p2 class="logo_font">Spotify</p2>
+                    </div>
+                    <h2 class="started">Get started</h2>
+                    <p class="started-2">Already have an account? <a href="#">Sign in</a></p>
+                </div>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" id="name" name="name" required>
+                        <img src="Images/error_icon.png" class="error-icon" id="nameErrorIcon" alt="Error icon">
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                        <img src="Images/error_icon.png" class="error-icon" id="emailErrorIcon" alt="Error icon">
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" id="password" name="password" required>
+                        <img src="Images/error_icon.png" class="error-icon" id="passwordErrorIcon" alt="Error icon">
+                        <span class="error" id="passwordError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" id="confirmPassword" name="confirmPassword" required>
+                        <img src="Images/error_icon.png" class="error-icon" id="confirmPasswordErrorIcon" alt="Error icon">
+                        <span class="error" id="confirmPasswordError"></span>
+                    </div>
+                    <button type="submit">Sign up</button>
+                </form>
+                <p class="terms">By signing up, you agree to the <a href="#">Terms of Service</a></p>
+            </div>
+            <div class="form-right">
+                <div class="Right_side">
+                    <div class="Image_one">
+                        <img src="Images/Image-right.jpg" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="successPopup" class="success-popup">Registration successful!</div>
+    <script src="script.js"></script>
+</body>
+</html>
